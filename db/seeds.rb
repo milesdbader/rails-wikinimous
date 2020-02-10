@@ -8,8 +8,8 @@
 
 10.times do
   Article.create(
-    title: Faker::Lorem.word,
+    title: Faker::Lorem.word.capitalize + ' ' + Faker::Lorem.word.capitalize,
     content: Faker::Lorem
-      .sentence(word_count: 20, supplemental: true, random_words_to_add: 50)
+      .sentence(word_count: 20, supplemental: true, random_words_to_add: 150)
   )
 end

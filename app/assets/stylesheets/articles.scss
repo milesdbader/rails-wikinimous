@@ -1,0 +1,54 @@
+// Place all the styles related to the articles controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+
+$nice-blue: #1c77ba;
+$nicer-blue: #16507e;
+$nice-gray: #5e5e5e;
+
+body {
+  font-family: roboto;
+  margin: 0;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px;
+    border-bottom: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+    a {
+      color: $nice-gray;
+      font-weight: 300;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .container {
+    margin: 16px 160px;
+
+    h2 {
+      color: $nice-blue;
+      font-family: 'Roboto Slab', serif;
+      font-size: 32px;
+    }
+
+    h2 a {
+      color: $nice-blue;
+      font-family: 'Roboto Slab', serif;
+      font-size: 32px;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+        color: $nicer-blue;
+      }
+    }
+
+    p {
+      font-weight: 200;
+    }
+
+  }
+}
